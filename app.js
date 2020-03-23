@@ -29,10 +29,18 @@ app.get("/campgrounds", function(req, res){
 
 
 
-//Campgrounds Route - POST
+//Campgrounds Route - POST - Takes information from form and actually creates a new campground
 app.post("/campgrounds", function(req, res){
     // get data from form and add to campgrounds array
     // redirect back to campgrounds page
+    res.send("YOU HIT THE POST ROUTE!");
+});
+
+
+
+//Campground Route - Shows form for entering information for new campground
+app.get("/campgrounds/new", function(req, res){
+    res.render("new");
 });
 
 
