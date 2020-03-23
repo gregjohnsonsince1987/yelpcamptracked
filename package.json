@@ -1,0 +1,19 @@
+{
+  "name": "yelpcamptracked",
+  "version": "1.0.0",
+  "description": "Yelcamp Tracked Version",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregjohnsonsince1987/yelpcamptracked.git"
+  },
+  "author": "Greg Johnson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gregjohnsonsince1987/yelpcamptracked/issues"
+  },
+  "homepage": "https://github.com/gregjohnsonsince1987/yelpcamptracked#readme"
+}
