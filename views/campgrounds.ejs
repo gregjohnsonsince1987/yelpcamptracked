@@ -1,4 +1,4 @@
-<h1>This is the campgrounds page!</h1>
+<%- include("partials/header") %>
 
 <!-- Looping through each of the campgrounds in our array -->
 <% campgrounds.forEach(function(campground){  %>
@@ -9,3 +9,6 @@
     
 
 <% }); %>
+
+
+<%- include("partials/footer") %>
