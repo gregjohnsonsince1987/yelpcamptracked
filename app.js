@@ -1,7 +1,8 @@
 var express = require("express");
 var app = express();
+var bodyParser = require("body-parser");
 
-
+app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 
 
@@ -22,8 +23,16 @@ app.get("/campgrounds", function(req, res){
     ]
     
     //{Arg2 - This is the name we are giving to the data we are passing through , Arg1 - This is the data we are passing through}
-    
+
     res.render("campgrounds", {campgrounds:campgrounds});
+});
+
+
+
+//Campgrounds Route - POST
+app.post("/campgrounds", function(req, res){
+    // get data from form and add to campgrounds array
+    // redirect back to campgrounds page
 });
 
 
